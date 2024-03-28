@@ -3,7 +3,7 @@
   }
 :root {
     --bg: #FFF;
-    --primary: #DE658D;
+    --primary: #0AE153;
     --secondary: #222;
 
 }
@@ -15,7 +15,23 @@ body {
 /* Helpers */
 .container {
     display: grid;
-    
+
+}
+.skiplink {
+
+}
+.skiplink:focus {
+
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 /* Navbar */
 /* */
