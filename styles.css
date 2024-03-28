@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+:root {
+    --bg: #FFF;
+    --primary: #DE658D;
+    --secondary: #222;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+/* Helpers */
+.container {
+    display: grid;
+    
+}
+/* Navbar */
+/* */
