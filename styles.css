@@ -14,14 +14,13 @@ body {
 
 /* Helpers */
 .container {
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: 0;
 }
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1.875rem;
 }
 .skiplink {
 
@@ -40,7 +39,79 @@ body {
     border: 0;
 }
 /* Navbar */
-header h1{
-    grid-column: span 6;
+head1{
+    -column: span 6;
 }
-/* */
+/*hero*/
+.hero{
+    grid-column: span 12;
+}
+.hero h1{
+    grid-column: span 12;
+    text-align: center;
+}
+.hero p{
+    grid-column: 2/ span 10;
+    text-align: center;
+    justify-self: center;
+    max-width: 30rem;
+}
+.hero a{
+    text-align: center;
+    color: var(--primary);
+    grid-column: span 12;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0px 1px 1px var(--primary);
+}
+.hero ul{
+    display: none;
+}
+/*pricing*/
+.pricing{
+    grid-column: span 12;
+    row-gap: 2rem;
+}
+.pricing h2{
+    grid-column: span 12;
+    text-align: center;
+    justify-self: center;
+}
+.pricing .voordelen{
+    grid-column: span 12;
+    padding: 0;
+}
+.pricing .voordelen li{
+    grid-column: 3 / span 8;
+}
+.pricing .card{
+    grid-column: 2 / span 10;
+    border-radius: 10px;
+    max-width: 340px;
+    justify-self: center;
+    border: 2px solid var(--primary);
+}
+.pricing .card p:first-child{
+    grid-column: span 12;
+    text-align: center;
+}
+.pricing .card h3, .pricing .card p{
+    grid-column: span 12;
+    padding: 0 10px;
+}
+.pricing .card ul{
+    grid-column: span 12;
+}
+.pricing .card a{
+    text-align: center;
+    color: var(--primary);
+    grid-column: 2 / span 10;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem;
+    box-shadow: 0px 1px 1px var(--primary);
+}
