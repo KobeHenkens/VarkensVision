@@ -1,6 +1,6 @@
 /* Contact Section */
 .contact-form {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -28,7 +28,7 @@
     background-color: #222;
   }
   .container-form_img {
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 1rem;
   }
@@ -39,8 +39,7 @@
     resize: none;
   }
   .layout {
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
   .layout label, fieldset {
     margin-bottom: 0.3125rem;
@@ -50,8 +49,7 @@
     margin-top: 1rem;
   }
   .layout fieldset {
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
   .layout fieldset legend {
     margin-bottom: 0.625rem;

@@ -2,10 +2,10 @@
     
     // Hamburger menu
     const nav = document.querySelector('.content');
-    const hamburgerButton = nav.querySelector('#menu');
-    const ul = nav.querySelector('ul');
+    const hamburgerButton = document.querySelector('#menu');
+    const ul = document.querySelector('ul');
 
-    toggleNav = function(){
+    const toggleNav = function(){
         nav.classList.toggle('active');
         const expanded = nav.classList.contains('active');
         hamburgerButton.setAttribute('aria-expanded', expanded);
@@ -14,5 +14,5 @@
 
     }
 
-    hamburgerButton = addEventListener('click', toggleNav);
+    hamburgerButton.addEventListener('click', toggleNav);
 })()

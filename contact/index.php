@@ -24,11 +24,9 @@ try {
 $name = isset($_POST['name']) ? (string)$_POST['name'] : '';
 $email = isset($_POST['email']) ? (string)$_POST['email'] : '';
 $message = isset($_POST['message']) ? (string)$_POST['message'] : '';
-$checkboxes = isset($_POST['portfolioDiscoveryMethod']) ? $_POST['portfolioDiscoveryMethod'] : [];
 $msgName = '';
 $msgEmail = '';
 $msgMessage = '';
-$msgCheckboxes = '';
 
 
 // form is sent: perform formchecking!
@@ -111,7 +109,7 @@ if (isset($_POST['btnSubmit'])) {
         </header>
     <main>
         <!--Contact Section Start-->
-        <section class="contact-form container">
+        <section class="grid contact-form container">
             <div class="container-contact">
                 <h1><span class="underlined">Get</span> in touch</h1>
                 <div class="container-form_img">
@@ -129,16 +127,12 @@ if (isset($_POST['btnSubmit'])) {
                             <textarea class="not-resizeable" name="message" id="message" rows="5" cols="20"><?php echo $message; ?></textarea>
                             <span class="message_error"><?php echo $msgMessage; ?></span>
                             
-
-
-
-
                             <div class="submit-button">
                                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Send">
                             </div>
                         </div>
                     </form>
-                    <img src="../img/emailicon.png" alt="envelope">
+                    <img src="../images/emailicon.png" alt="envelope">
                 </div>
             </div>
         </section>
