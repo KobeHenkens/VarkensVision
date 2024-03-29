@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+:root {
+    --bg: #FFF;
+    --primary: #0AE153;
+    --secondary: #222;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+/*hero*/
+.hero{
+    grid-column: span 12;
+}
+.hero h1{
+    grid-column: span 12;
+    text-align: center;
+}
+.hero p{
+    grid-column: 2/ span 10;
+    text-align: center;
+    justify-self: center;
+    max-width: 30rem;
+}
+.hero a{
+    text-align: center;
+    color: var(--primary);
+    grid-column: span 12;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0px 1px 1px var(--primary);
+    margin-bottom: 2rem;
+}
+.hero ul{
+    display: none;
+}
+/*pricing*/
+.pricing{
+    grid-column: span 12;
+    row-gap: 2rem;
+}
+.pricing h2, .pricing p:last-of-type{
+    margin: 0;
+}
+.pricing h2, .pricing p, .pricing a{
+    grid-column: span 12;
+    text-align: center;
+    justify-self: center;
+}
+.pricing .voordelen{
+    grid-column: span 12;
+    padding: 0;
+    justify-self: center;
+}
+.pricing .voordelen li{
+    grid-column: 3 / span 8;
+    font-size: 1.2rem;
+}
+.pricing .voordelen li::marker{
+    color: var(--primary);
+}
+.pricing .card{
+    grid-column: 2 / span 10;
+    border-radius: 10px;
+    max-width: 340px;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    box-shadow: 1px 1px 3px var(--secondary);
+}
+.pricing .card p:first-child{
+    grid-column: span 12;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.pricing .card h3, .pricing .card p{
+    grid-column: span 12;
+    padding: 0 10px;
+}
+.pricing .card ul{
+    grid-column: span 12;
+}
+.pricing .card ul li::marker{
+    color: var(--primary);
+}
+.pricing .card a{
+    text-align: center;
+    color: var(--secondary);
+    background-color: var(--primary);
+    grid-column: 2 / span 10;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem;
+    box-shadow: 0px 1px 1px var(--primary);
+    text-decoration: none;
+}
+.pricing a{
+    color: var(--primary);
+}
+.arrow {
+    border: solid var(--primary);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  /*new content*/
+  .new_content{
+    grid-column: span 12;
+  }
+  .new_content h2{
+    grid-column: span 12;
+    text-align: center;
+  }
+  .new_content .card{
+    grid-column: 2 / span 10;
+    border-radius: 10px;
+    max-width: 340px;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    box-shadow: 1px 1px 3px var(--secondary);
+  }
+  .new_content .card img{
+    grid-column: 2 / span 10;
+    width: 100%;
+    margin-top: 20px;
+    justify-self: center;
+  }
+  .new_content .card p, .new_content .card h3{
+    grid-column: 2 / span 10;
+    margin: 0;
+}
