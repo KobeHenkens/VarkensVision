@@ -16,6 +16,7 @@ body {
     grid-column: span 12;
 }
 .hero h1{
+    font-size: 2rem;
     grid-column: span 12;
     text-align: center;
 }

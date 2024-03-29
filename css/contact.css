@@ -1,0 +1,128 @@
+/* Contact Section */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .contact-form .container-contact {
+    border-radius: 0.625rem;
+    padding: 3rem;
+    box-shadow: #222 0 0.4375rem 1.25rem 0;
+  }
+  .contact-form h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 3rem 0;
+  }
+  .contact-form .underlined {
+    position: relative;
+  }
+  .contact-form .underlined::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 0.25rem;
+    background-color: #222;
+  }
+  .container-form_img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .container-form_img img {
+    height: 200px;
+  }
+  .contact-form .not-resizeable {
+    resize: none;
+  }
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .layout label, fieldset {
+    margin-bottom: 0.3125rem;
+    margin-top: 1rem;
+  }
+  .layout .submit-button {
+    margin-top: 1rem;
+  }
+  .layout fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .layout fieldset legend {
+    margin-bottom: 0.625rem;
+  }
+  .submit-button input {
+    background-color: var(--primary);
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+    width: 100%;
+  }
+  .submit-button input:hover, 
+  .submit-button input:focus-visible {
+    transform: scale(1.10);
+  }
+  .message_error {
+    color: #b90e0a;
+  }
+
+/* Thanks Section */
+section div {
+    grid-column: 5 / 9;
+}
+.container-page {
+    height: 100vh;
+    width: 100%;
+  }
+  .form_sent_successfully{
+    text-align: center;
+  }
+  .form_sent_successfully h1 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .form_sent_successfully p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  /* Admin Dashboard Database (contact) */
+.admin_dashboard-container {
+    margin: 1rem;
+  }
+  .admin_dashboard-container .underlined {
+    position: relative;
+  }
+  .admin_dashboard-container .underlined::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 0.25rem;
+    background-color: #222;
+  }
+  .admin_dashboard-container .data {
+    display: grid;
+    grid-column: 6 / span 4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+  }
+  .admin_dashboard-container .data ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .admin_dashboard-container .data li{
+    border: 0.0625rem solid #ddd;
+    padding: 0.625rem;
+    margin: 0.3125rem;
+    width: 100%;
+  }
