@@ -1,5 +1,3 @@
-
-
 (function(){
     
     // Hamburger menu
