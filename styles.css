@@ -72,7 +72,7 @@ header nav ul {
     width: 100%;
     text-align: center;
     list-style-type: none;
-    padding: 0;
+    padding: 1rem 0;
 }
 header nav ul a {
     color: var(--secondary);
@@ -112,7 +112,10 @@ header nav ul a {
 }
 .visible {
     display: grid;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px -3px #222; 
 }
+
 /*hero*/
 .hero{
     grid-column: span 12;
@@ -185,4 +188,16 @@ header nav ul a {
     padding: 0.5rem 1rem;
     margin: 1.5rem;
     box-shadow: 0px 1px 1px var(--primary);
+}
+
+
+@media (min-width: 50em){
+    header .logo {
+        grid-column: 4 / 5;
+        max-width: 60rem;
+    }
+    header nav {
+        grid-column:  5  / 10;
+        justify-content: end;
+    }
 }

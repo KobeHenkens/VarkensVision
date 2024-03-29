@@ -1,8 +1,11 @@
+
+
 (function(){
+    
     // Hamburger menu
     const nav = document.querySelector('.content');
     const hamburgerButton = nav.querySelector('#menu');
-    const ul = nav.querySelector('ul')
+    const ul = nav.querySelector('ul');
 
     toggleNav = function(){
         nav.classList.toggle('active');
@@ -14,9 +17,4 @@
     }
 
     hamburgerButton = addEventListener('click', toggleNav);
-
-
-
-
-
 })()
