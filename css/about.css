@@ -1,0 +1,11 @@
+section{
+    grid-column: span 12;
+    justify-self: center;
+    max-width: 1000px;
+}
+h1{
+    grid-column: span 12;
+}
+p{
+    grid-column: span 12;
+}
