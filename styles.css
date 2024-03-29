@@ -136,6 +136,7 @@ header nav ul a {
     border-radius: 2rem;
     padding: 1rem 2rem;
     box-shadow: 0px 1px 1px var(--primary);
+    margin-bottom: 2rem;
 }
 .hero ul{
     display: none;
@@ -145,7 +146,10 @@ header nav ul a {
     grid-column: span 12;
     row-gap: 2rem;
 }
-.pricing h2{
+.pricing h2, .pricing p:last-of-type{
+    margin: 0;
+}
+.pricing h2, .pricing p, .pricing a{
     grid-column: span 12;
     text-align: center;
     justify-self: center;
@@ -153,9 +157,14 @@ header nav ul a {
 .pricing .voordelen{
     grid-column: span 12;
     padding: 0;
+    justify-self: center;
 }
 .pricing .voordelen li{
     grid-column: 3 / span 8;
+    font-size: 1.2rem;
+}
+.pricing .voordelen li::marker{
+    color: var(--primary);
 }
 .pricing .card{
     grid-column: 2 / span 10;
@@ -178,6 +187,9 @@ header nav ul a {
 .pricing .card ul{
     grid-column: span 12;
 }
+.pricing .card ul li::marker{
+    color: var(--primary);
+}
 .pricing .card a{
     text-align: center;
     color: var(--secondary);
@@ -191,3 +203,13 @@ header nav ul a {
     box-shadow: 0px 1px 1px var(--primary);
     text-decoration: none;
 }
+.pricing a{
+    color: var(--primary);
+}
+.arrow {
+    border: solid var(--primary);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }

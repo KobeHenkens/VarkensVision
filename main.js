@@ -14,7 +14,12 @@
     }
 
     hamburgerButton = addEventListener('click', toggleNav);
-
+    
+    document.addEventListener('click', function(event) {
+        if (!nav.contains(event.target) && nav.classList.contains('active')) {
+            toggleNav();
+        }
+    });
 
 
 
