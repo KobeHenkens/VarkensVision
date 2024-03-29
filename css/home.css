@@ -101,6 +101,9 @@ body {
     box-shadow: 0px 1px 1px var(--primary);
     text-decoration: none;
 }
+.pricing .card :hover{
+    box-shadow: 0px 0px 7px var(--secondary);
+}
 .pricing a{
     color: var(--primary);
 }
@@ -126,14 +129,47 @@ body {
     justify-self: center;
     border: 2px solid var(--primary);
     box-shadow: 1px 1px 3px var(--secondary);
+    margin-top: 20px;
   }
   .new_content .card img{
     grid-column: 2 / span 10;
     width: 100%;
     margin-top: 20px;
     justify-self: center;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
   }
   .new_content .card p, .new_content .card h3{
     grid-column: 2 / span 10;
     margin: 0;
 }
+.card:hover{
+    box-shadow: 0px 0px 10px var(--secondary);
+  }
+  @media (min-width: 50em){
+    .pricing{
+        max-width: 1000px;
+        width: 100%;
+        justify-self: center;
+    }
+    .pricing .voordelen li{
+        grid-column: span 6;
+    }
+    .pricing .voordelen{
+        column-gap: 3rem;
+        margin-left: 4rem;
+    }
+    .pricing .card{
+        grid-column: span 6;
+    }
+    .new_content{
+        max-width: 1000px;
+        width: 100%;
+        justify-self: center;
+        column-gap: 2rem;
+        padding: 0 2rem;
+    }
+    .new_content .card{
+        grid-column: span 4;
+    }
+  }
