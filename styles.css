@@ -23,6 +23,7 @@ p {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    
 }
 .skiplink {
     position: absolute;
@@ -120,6 +121,7 @@ header nav ul a {
     box-shadow: 0px 4px 6px -3px #222; 
 }
 footer{
+    margin-top: auto;
     margin-top: 2rem;
     height: 5rem;
     width: 100%;

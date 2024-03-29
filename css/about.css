@@ -1,11 +1,18 @@
 section{
     grid-column: span 12;
     justify-self: center;
-    max-width: 1000px;
+    min-height: 100vh;
+}
+.grid {
+    grid-template-rows: auto repeat(2, 1fr) auto;
 }
 h1{
     grid-column: span 12;
+    grid-row: 1;
+    padding: 0 2rem;
 }
 p{
     grid-column: span 12;
+    grid-row: 2;
+    padding: 0 2rem;
 }

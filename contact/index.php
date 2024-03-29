@@ -75,8 +75,9 @@ if (isset($_POST['btnSubmit'])) {
 <head>
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VarkensVision</title>
+        <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
         <!--CSS-->
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="../css/contact.css">
@@ -139,8 +140,9 @@ if (isset($_POST['btnSubmit'])) {
         <!--Contact Section End-->
     </main>
 
-        <footer>
-
+    <footer class="grid">
+            <p>©2024 Vison</p>
+            <p>All rights Reserved</p>
         </footer>
     </body>
 </html>

@@ -39,7 +39,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="thanks">
             <!--Thanks Section Start-->
             <section class="form_sent_successfully grid">
                 <div class="container-page">
@@ -49,9 +49,9 @@
             </section>
             <!--Thanks Section End-->
         </main>
-        
-        <footer>
-
+        <footer class="grid">
+            <p>©2024 Vison</p>
+            <p>All rights Reserved</p>
         </footer>
     </body>
 </html>
