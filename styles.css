@@ -213,3 +213,29 @@ header nav ul a {
     padding: 3px;
     transform: rotate(-45deg);
   }
+  /*new content*/
+  .new_content{
+    grid-column: span 12;
+  }
+  .new_content h2{
+    grid-column: span 12;
+    text-align: center;
+  }
+  .new_content .card{
+    grid-column: 2 / span 10;
+    border-radius: 10px;
+    max-width: 340px;
+    justify-self: center;
+    border: 2px solid var(--primary);
+    box-shadow: 1px 1px 3px var(--secondary);
+  }
+  .new_content .card img{
+    grid-column: 2 / span 10;
+    width: 100%;
+    margin-top: 20px;
+    justify-self: center;
+  }
+  .new_content .card p, .new_content .card h3{
+    grid-column: 2 / span 10;
+    margin: 0;
+}
